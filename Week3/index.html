@@ -1,71 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Set character encoding -->
-    <meta charset="UTF-8">
-
-    <!-- Make the page responsive on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Set the browser tab title -->
-    <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Layout</title>
 </head>
-
 <body>
-    <!-- Main heading -->
-    <h1>Welcome to My Website</h1>
+  <header>
+    <h1>My Website</h1>
+    <p>Welcome to my website!</p>
+  </header>
 
-    <!-- Introduction section -->
-    <h2>Introduction</h2>
-    <p>
-        Hello! Welcome to my <strong>first website</strong>.
-        I am learning <em>HTML</em> to create web pages.
-    </p>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Display an image with alternative text -->
-    <img
-        src="images/profile.jpg"
-        alt="A profile photo of the website author"
-        width="300"
-    >
+  <main id="home">
+    <section id="about">
+      <h2>About Us</h2>
+      <article>
+        <h3>Our Story</h3>
+        <p>Learn more about our mission, values, and goals.</p>
+      </article>
+    </section>
 
-    <hr>
+    <section id="services">
+      <h2>Our Services</h2>
+      <article>
+        <h3>Web Development</h3>
+        <p>We create modern and responsive websites.</p>
+      </article>
+    </section>
 
-    <!-- Skills section -->
-    <div id="skills" class="section">
-        <h2>Skills</h2>
-        <p>I am learning HTML and CSS.</p>
-    </div>
+    <aside>
+      <h2>Related Information</h2>
+      <p>Explore additional resources and useful links.</p>
+    </aside>
+  </main>
 
-    <!-- Education section -->
-    <div id="education" class="section">
-        <h2>Education</h2>
-        <p>I enjoy learning new things!</p>
-    </div>
-
-    <!-- Course list with a nested list -->
-    <div id="courses" class="section">
-        <h2>My Courses</h2>
-
-        <ul>
-            <li>
-                HTML
-                <ul>
-                    <li>HTML document structure</li>
-                    <li>Headings and paragraphs</li>
-                    <li>Images and links</li>
-                    <li>Lists and nested lists</li>
-                </ul>
-            </li>
-
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-
+  <footer id="contact">
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+    <p>Contact: info@example.com</p>
+  </footer>
 </body>
-
 </html>
-

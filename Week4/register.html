@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club - Register</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Club Registration</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Student Registration</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <br>
+
+                
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <br>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <br>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <br>
+                <div>
+                    <label>Interests:</label>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="ai" name="interests" value="ai">
+                    <label for="ai">AI & ML</label>
+                    <input type="checkbox" id="web" name="interests" value="web">
+                    <label for="web">Web Dev</label>
+                </div>
+                <br>
+                <div>
+                    <label for="branch">Engineering Branch:</label>
+                    <select id="branch" name="branch">
+                        <option value="">--Select Branch--</option>
+                        <option value="cse">Computer Science</option>
+                        <option value="ece">Electronics</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="civil">Civil</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                </div>
+                <br>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

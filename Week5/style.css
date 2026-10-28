@@ -1,4 +1,28 @@
-/* Week 5: Base stylesheet setup */
+
 body {
     font-family: sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+
+#hero {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }

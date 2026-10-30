@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.sticky-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.profile-card {
+    width: 280px;
+    padding: 20px;
+    border: 2px solid #1a73e8;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1a73e8;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    margin: 10px 0 5px 0;
+    color: #1a73e8;
+}
+
+.profile-card .title {
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.bio-box {
+    height: 75px;
+    overflow-y: auto;
+    border: 1px dashed #cccccc;
+    padding: 8px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.bio-box p {
+    margin: 0;
+    font-size: 13px;
+    color: #444444;
+    line-height: 1.4;
+}
+
+.profile-card.theme-teal {
+    border-color: #00897b;
+}
+
+.profile-card.theme-teal .avatar {
+    border-color: #00897b;
+}
+
+.profile-card.theme-teal h3 {
+    color: #00695c;
+}
+
+.profile-card.theme-purple {
+    border-color: #7b1fa2;
+}
+
+.profile-card.theme-purple .avatar {
+    border-color: #7b1fa2;
+}
+
+.profile-card.theme-purple h3 {
+    color: #6a1b9a;
+}
+
+.fab-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 28px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.fab-btn:hover {
+    background-color: #1557b0;
+}

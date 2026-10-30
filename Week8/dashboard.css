@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    padding: 20px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+    min-height: 90vh;
+}
+
+.dashboard-header,
+.dashboard-sidebar,
+.dashboard-main,
+.dashboard-footer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
